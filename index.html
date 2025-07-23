@@ -13,6 +13,10 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       scroll-behavior: smooth;
     }
+    #about p , #moot ol, #moot ul , #rules ol, #rules ul, #rules p {
+  font-weight: normal !important;
+}
+
     header {
       background-color: #fff;
       padding: 10px 20px;
@@ -21,7 +25,8 @@
     .video-banner {
       position: relative;
       overflow: hidden;
-      height: 40vh;
+      height: 80vh;
+      width:auto;
       color: white;
       text-align: center;
       display: flex;
@@ -39,7 +44,8 @@
     }
     .video-banner .content {
       z-index: 2;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.25);
+      height: 40vh;
       padding: 40px;
       border-radius: 10px;
     }
@@ -202,11 +208,11 @@
     }
   </style>
 </head>
-<body>
+<body class="">
   <header class="navbar navbar-expand-lg bg-white shadow-sm">
     <div class="container-fluid px-3">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="NCT-logo.png" alt="Natarajan Charitable Trust Logo" height="50">
+        <img src="Natarajan.jpg" alt="Natarajan Charitable Trust Logo" height="50"><img src="NCT_logo.png" alt="Natarajan Charitable Trust Logo" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
               aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -214,11 +220,11 @@
       </button>
       <div class="collapse navbar-collapse justify-content-between align-left" id="navbarMenu">
         <ul class="navbar-nav ms-3 mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
-          <li class="nav-item"><a class="nav-link" href="#moot">MOOT PROPOSITION</a>
-          <li class="nav-item"><a class="nav-link" href="#rules">RULES & REGULATIONS</a>
+          <li class="nav-item"><a class="nav-link" href="#" id="home-link">HOME</a></li>
           <li class="nav-item"><a class="nav-link" href="#schedule">EVENT SCHEDULE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#" id="moot-link">MOOT PROPOSITION</a>
+          <li class="nav-item"><a class="nav-link" href="#" id="rules-link">RULES & REGULATIONS</a> -->
         </ul>
         <!-- <a href="" target="_blank" class="btn btn-outline-primary mt-2 mt-lg-0">Contact Us</a> -->
       </div>
@@ -226,12 +232,27 @@
   </header>
   
   <section id="home" class="hero text-center bg-light pb-2">
-    <div class="container">
-      <!-- <h2 class="fw-bold">THE N. NATARAJAN CHARITABLE TRUST</h2> -->
+    <div class="">
       <div class="video-banner">
-        <h1 class="content">THE N. NATARAJAN CHARITABLE TRUST</h1>
+        <div class="content">
+          <h1>THE N. NATARAJAN CHARITABLE TRUST MOOT COURT COMPETITION, 2025</h1>
+          <h4><i class="fas fa-calendar-alt me-2"></i>19th September, 2025 – 21st September, 2025</h4>
+          <div class="container text-center mt-4">
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+              <a href="Step1.pdf" target="_blank" class="btn btn-outline-primary d-flex align-items-center justify-content-center">
+                <i class="fas fa-file-pdf me-2"></i> Register - Step 1
+              </a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScDlQ_Q9jrEBV_ipC4dhltzE7Uyz3ERn-UFEXygFc_tkDXNrA/viewform" 
+                 target="_blank" class="btn btn-outline-success d-flex align-items-center justify-content-center">
+                <i class="fas fa-edit me-2"></i> Register - Step 2
+              </a>
+            </div>
+          </div>
+                 
+        </div>
       </div>
-      <p class="mt-2 mb-1">in association with</p>
+      
+      <!-- <p class="mt-2 mb-1">in association with</p>
       <img src="MBA-logo.png">
       <h4 class="text-uppercase">THE MADRAS BAR ASSOCIATION,<br> MADRAS HIGH COURT, CHENNAI</h4>
       
@@ -258,14 +279,115 @@
       <p class="mt-4">THE N. NATARAJAN CHARITABLE TRUST MOOT COURT COMPETITION 2025<br>
         <span class="text-muted">in association with</span><br>
         <strong>THE MADRAS BAR ASSOCIATION</strong>
-      </p>
+      </p> -->
     </div>
   </section>
-  <section id="about" class="section  text-center ">
+  <section id="about-comp" class="section bg-light text-black">
     <div class="container">
-      <h2 style="color: #731018;">ABOUT US</h2>
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;"> About The Moot Court Competition 2025</h2>
+    <!-- <h5 class="fw-bold text-uppercase"><u></u></h5> -->
+        <h6 style="color: #731018;"><i>Honouring Legacy, Inspiring Advocacy</i></h6> 
+        <p>The N. Natarajan Charitable Trust Moot Court Competition, hosted in collaboration with the Madras Bar Association, is one of Tamil Nadu’s most prestigious State-level moot events. It is open to law students across Tamil Nadu and Puducherry and is envisioned as more than a contest—it is a courtroom experience.</p>
+        <p>What sets this competition apart is the depth of its authenticity. Adjudicated by sitting judges of the Hon’ble Supreme Court of India and Hon’ble High Court of Madras and leading Senior Advocates of the Madras Bar, every round mirrors the decorum, intensity and expectations of real-world legal proceedings.</p>
+        <p>
+            Celebrating the Trusts decennium, the competition pays homage to Thiru. N. Natarajan’s legacy—championing the art of advocacy, the discipline of research and the ethics of legal practice. It is a platform where young minds not only test their skills but also encounter the ideals that defined Thiru. Natarajan’s life and practice.
+        </p>
+      </div>
+  </section>
+  <section id="schedule" class="section text-white" style="background-color: #800000">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-uppercase">Event Schedule – 2025</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">18th July 2025</span>
+            <p><strong>Release of Moot Proposition, its Rules & Commencement of Registration</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">18th August 2025, 11:59 PM</span>
+            <p><strong>Last date to register to participate in the Moot Court Competition</p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">20th August 2025</span>
+            <p><strong>Organizing Committee shall confirm the participation of the Institution by a confirmation email</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">22nd August 2025, 11:59 PM</span>
+            <p><strong>Last date for seeking clarification on the Moot Proposition or Rules</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">27th August 2025</span>
+            <p><strong>Registration formalities to be completed along with DD via Speed Post / Courier, Release of Clarification, if any</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2nd September 2025</span>
+            <p><strong>Travel Form to be emailed</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">8th September 2025, 11:59 PM</span>
+            <p><strong>Submission of the soft copies of the Memorandum via email</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">15th September 2025 , 11:59 PM</span>
+            <p><strong>Submission of 2 hard copies of each Petitioner and Respondent Memorandum via Speed Post / Courier</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">19th September 2025</span>
+            <p><strong>Inaugural and Preliminary Rounds of The N. Natarajan Charitable Trust Moot Court Competition 2025</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">20th September 2025</span>
+              <p><strong>Advanced Rounds and Researchers Test </strong></p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">21st September 2025</span>
+              <p><strong>Finals and Valedictory Ceremony of The N. Natarajan Charitable Trust Moot Court Competition 2025</strong></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="meet-org" class="section text-black">
+    <div class="container">
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">Meet the organizers</h2>
+    </div>
+  </section>
+  <section id="about" class="section bg-light text-left">
+    <div class="container">
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">ABOUT US</h2>
       <div style="text-align: left;">
-    <div class="row align-items-center my-4 text-start">
+      <div class="row align-items-center my-4 text-start">
         <div class="col-md-7">
           <h5 class="fw-bold text-uppercase"><u>Thiru. N. Natarajan, Senior Advocate (1931 – 2021)</u></h5>
           <h6 style="color: #731018;"><i>A Legacy Etched in Law</i></h6>
@@ -283,21 +405,46 @@
         <p>Established by the juniors and disciples of Late Thiru. N. Natarajan, the N. Natarajan Charitable Trust stands as a living tribute to a life devoted to law, learning and service. With a mission to continue his vision of accessible and ethical legal education, the Trust focuses on empowering the next generation of students and lawyers—particularly those from underrepresented backgrounds.
         </p>
        <p> Now in its decennial year, the Trust has been at the forefront of initiatives that blend scholarship with service: conducting National and State-level Moot Court Competitions, organizing Law Lecture Series featuring leading legal minds and sponsoring the education of deserving students who exemplify promise and perseverance.
-    </p><p>      Its core objectives are rooted in creating pathways for academic excellence, expanding access to legal education and nurturing a generation of legal professionals driven by principle, empathy, and public spirit.
+    </p><p>      Its core objectives are rooted in creating pathways for academic excellence, expanding access to legal education and nurturing a generation of legal professionals driven by principle, empathy, and public spirit.<br> 
+      <center>AND <br>
         </p>
-        <h5 class="fw-bold text-uppercase"><u>The Moot Court Competition 2025</u></h5>
-        <h6 style="color: #731018;"><i>Honouring Legacy, Inspiring Advocacy</i></h6> 
-        <p>The N. Natarajan Charitable Trust Moot Court Competition, hosted in collaboration with the Madras Bar Association, is one of Tamil Nadu’s most prestigious State-level moot events. It is open to law students across Tamil Nadu and Puducherry and is envisioned as more than a contest—it is a courtroom experience.</p>
-        <p>What sets this competition apart is the depth of its authenticity. Adjudicated by sitting judges of the Hon’ble Supreme Court of India and Hon’ble High Court of Madras and leading Senior Advocates of the Madras Bar, every round mirrors the decorum, intensity and expectations of real-world legal proceedings.</p>
-        <p>
-            Celebrating the Trusts decennium, the competition pays homage to Thiru. N. Natarajan’s legacy—championing the art of advocacy, the discipline of research and the ethics of legal practice. It is a platform where young minds not only test their skills but also encounter the ideals that defined Thiru. Natarajan’s life and practice.
-        </p>
+        <img src="MBA-logo.png" alt="Thiru. N. Natarajan" class="img-fluid rounded shadow-sm" style="max-height: 400px; object-fit: cover;">
+        <h4 class="text-uppercase text-center">THE MADRAS BAR ASSOCIATION, MADRAS HIGH COURT, CHENNAI</h4></center>
     </div>
     </div>
   </section>
-  <section id="moot" class="section bg-light text-center ">
+  <section id="quick-links" class="section text-black">
     <div class="container">
-      <h2 style="color: #731018;">MOOT PROPOSITION</h2>
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">Quick Links</h2>
+      <div class="list-group">
+        <a href="NN-moot.pdf" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center">
+          <i class="fas fa-file-pdf text-danger me-2"></i> Brochure
+        </a>
+        <a href="Step1.pdf" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center">
+          <i class="fas fa-edit text-primary me-2"></i> Registration
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+          <i class="fas fa-question-circle text-success me-2"></i> Clarifications
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="org-committee" class="section text-black">
+    <div class="container">
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">Organizing committee</h2>
+    </div>
+  </section>
+  <section id="contact-us" class="section text-black">
+    <div class="container">
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">Contact Us</h2>
+     <p> Event Convenor:<br>
+              <strong>Miss. Shakeenaa Abdul Gafoor</strong> – 
+              <a href="tel:+919444185045">+91 94441 85045</a></p>
+    </div>
+  </section>
+  <section id="moot" class="section bg-light text-left " style="display: none;">
+    <div class="container">
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">MOOT PROPOSITION</h2>
       <div style="text-align: left;">
         <ol>
           <li>
@@ -442,9 +589,9 @@
         </ol>
       </div>
   </section>
-  <section id="rules" class="section text-center">
+  <section id="rules" class="section text-left" style="display: none;">
     <div class="container">
-      <h2 style="color: #731018;">RULES AND REGULATIONS</h2>
+      <h2 class="text-left fw-bold text-uppercase" style="color: #731018;">RULES AND REGULATIONS</h2>
       <div style="text-align: left;">
           <h6>1. GENERAL RULES</h6>
           <h6 style="color: #731018;"><i>1.1 DATE &amp; VENUE OF THE COMPETITION:</i></h6>
@@ -816,94 +963,11 @@
         </div>
       </div>
   </section>
-  <section id="schedule" class="section text-white" style="background-color: #800000">
-    <div class="container">
-      <h2 class="text-center mb-5 fw-bold text-uppercase">Event Schedule – 2025</h2>
-      <div class="timeline">
-        <div class="timeline-item left">
-          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">18th July 2025</span>
-            <p><strong>Release of Moot Proposition, its Rules & Commencement of Registration</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">18th August 2025, 11:59 PM</span>
-            <p><strong>Last date to register to participate in the Moot Court Competition</p>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">20th August 2025</span>
-            <p><strong>Organizing Committee shall confirm the participation of the Institution by a confirmation email</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">22nd August 2025, 11:59 PM</span>
-            <p><strong>Last date for seeking clarification on the Moot Proposition or Rules</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">27th August 2025</span>
-            <p><strong>Registration formalities to be completed along with DD via Speed Post / Courier, Release of Clarification, if any</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2nd September 2025</span>
-            <p><strong>Travel Form to be emailed</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">8th September 2025, 11:59 PM</span>
-            <p><strong>Submission of the soft copies of the Memorandum via email</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">15th September 2025 , 11:59 PM</span>
-            <p><strong>Submission of 2 hard copies of each Petitioner and Respondent Memorandum via Speed Post / Courier</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
-          <div class="timeline-content">
-            <span class="timeline-date">19th September 2025</span>
-            <p><strong>Inaugural and Preliminary Rounds of The N. Natarajan Charitable Trust Moot Court Competition 2025</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-            <div class="timeline-icon-right"><i class="fas fa-file-alt"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-date">20th September 2025</span>
-              <p><strong>Advanced Rounds and Researchers Test </strong></p>
-            </div>
-        </div>
-        <div class="timeline-item left">
-            <div class="timeline-icon-left"><i class="fas fa-file-alt"></i></div>
-            <div class="timeline-content">
-              <span class="timeline-date">21st September 2025</span>
-              <p><strong>Finals and Valedictory Ceremony of The N. Natarajan Charitable Trust Moot Court Competition 2025</strong></p>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
+  
 
  
   <footer>
-    <p>&copy; 2025 NATARAJAN CHARITABLE TRUST. All rights reserved.</p>
+    <p>&copy; 2025 The N.NATARAJAN CHARITABLE TRUST. All rights reserved.</p>
   </footer>
   <!-- Back to Top Button -->
   <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
@@ -949,40 +1013,39 @@
     });
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const navLinks = document.querySelectorAll(".nav-link");
-      const sections = document.querySelectorAll("section");
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+      const mootLink = document.getElementById('moot-link');
+      const rulesLink = document.getElementById('rules-link');
+      const mootSection = document.getElementById('moot');
+      const rulesSection = document.getElementById('rules');
   
-      navLinks.forEach(link => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          const targetId = link.getAttribute("href").substring(1);
-  
-          sections.forEach(section => {
-            if (section.id === targetId || (targetId === "" && section.id === "home")) {
-              section.classList.remove("d-none");
-            } else {
-              section.classList.add("d-none");
-            }
-          });
-  
-          // Collapse the navbar on mobile after click (optional)
-          const navbar = document.querySelector(".navbar-collapse");
-          if (navbar.classList.contains("show")) {
-            new bootstrap.Collapse(navbar).hide();
-          }
+      function showOnly(sectionToShow) {
+        sections.forEach(section => {
+          section.style.display = (section === sectionToShow) ? 'block' : 'none';
         });
+        sectionToShow.scrollIntoView({ behavior: 'smooth' });
+      }
+  
+      mootLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        showOnly(mootSection);
       });
   
-      // Show only HOME by default
-      sections.forEach(section => {
-        if (section.id !== "home") {
-          section.classList.add("d-none");
-        }
+      rulesLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        showOnly(rulesSection);
       });
     });
+    const homeLink = document.getElementById('home-link');
+homeLink.addEventListener('click', function (e) {
+  e.preventDefault();
+  sections.forEach(section => section.style.display = 'block');
+  document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+});
+
   </script>
   
-
+  
 </body>
 </html>
